@@ -7,10 +7,38 @@
 
 </head>
 <body onload="setupGame()" id="body">
-	<div id = "boardContainer"></div>
+	<section class="modal" id="playerNoModal">
+		<div class="modalContent">
+			<label for="playerNo">How many players? </label>
+
+			<select id="playerNo">
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			</select>
+			<button type="button" id="submitPlayerNo" onclick="setPlayerNo()">Play</button>
+		</div>
+	</section>
+	<div id="container">
+		<header>
+			<h1>TikiTopple</h1></header>
+		
+		<main>
+			<section id="playArea">
+				<!-- PLAYERS PLAY AREA ADDED HERE -->
+			</section>
+			<section id = "boardContainer">
+			</section>
+		</main>
+	</div>
+
+
 	
-	<div id="pack"></div>
-	<button type="button" disabled id="playButton" onclick="clickPlay()">Play</button>
+	
+	
+	
+	
 
 <script src="Tiki.js"></script>
 </body>
